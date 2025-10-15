@@ -4,6 +4,10 @@ public class Basket implements Order {
     private ArrayList<Product> products = new ArrayList<>();
     private int id;
 
+    public Basket(int id) {
+        this.id = id;
+    }
+
     @Override
     public int getID() {
         return id;
@@ -31,11 +35,11 @@ public class Basket implements Order {
         }
         return false;
     }
-    public boolean setProductCount(int id, int count)
+    public boolean incProduct(int id)
     {
         for (Product product : products) {
             if (product.getID() == id) {
-                product.setCount(count);
+                product.setCount(product.getCount() + 1);
                 return true;
             }
         }

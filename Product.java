@@ -13,26 +13,22 @@ public class Product implements Order {
     public String getName() {
         return this.name;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
     @Override
     public int getID() {
         return this.id;
     }
     @Override
     public double getPrice() {
-        return this.price;
+        return this.price * count;
     }
-    public void setPrice(double price) {
-        assert (price > 0);
-        this.price = price;
-    }
+
     public int getCount() {
         return this.count;
     }
     public void setCount(int count) {
-        assert (count > 0);
+        if (count < 0) {
+            throw new IllegalArgumentException("count can't be less than zero");
+        }
         this.count = count;
     }
 }

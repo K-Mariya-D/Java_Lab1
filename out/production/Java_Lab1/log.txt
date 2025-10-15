@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-10-15T07:10:48.896570200Z</date>
+  <millis>1760512248896</millis>
+  <nanos>570200</nanos>
+  <sequence>0</sequence>
+  <logger>Shop</logger>
+  <level>INFO</level>
+  <class>Shop</class>
+  <method>addHendler</method>
+  <thread>1</thread>
+  <message>Add another handler</message>
+</record>
+<record>
+  <date>2025-10-15T07:10:49.008926400Z</date>
+  <millis>1760512249008</millis>
+  <nanos>926400</nanos>
+  <sequence>1</sequence>
+  <logger>Shop</logger>
+  <level>INFO</level>
+  <class>Shop</class>
+  <method>signUp</method>
+  <thread>1</thread>
+  <message>Client with id = {1} was registered</message>
+</record>
+<record>
+  <date>2025-10-15T07:10:49.008926400Z</date>
+  <millis>1760512249008</millis>
+  <nanos>926400</nanos>
+  <sequence>2</sequence>
+  <logger>Shop</logger>
+  <level>INFO</level>
+  <class>Shop</class>
+  <method>signUp</method>
+  <thread>1</thread>
+  <message>Client with id = {3} was registered</message>
+</record>
+<record>
+  <date>2025-10-15T07:10:53.290745100Z</date>
+  <millis>1760512253290</millis>
+  <nanos>745100</nanos>
+  <sequence>3</sequence>
+  <logger>Shop</logger>
+  <level>FINE</level>
+  <class>Shop</class>
+  <method>makeOrder</method>
+  <thread>1</thread>
+  <message>Order is made</message>
+</record>
+<record>
+  <date>2025-10-15T07:11:10.785524400Z</date>
+  <millis>1760512270785</millis>
+  <nanos>524400</nanos>
+  <sequence>4</sequence>
+  <logger>Shop</logger>
+  <level>WARNING</level>
+  <class>Shop</class>
+  <method>makeOrder</method>
+  <thread>1</thread>
+  <message>Exception:</message>
+  <exception>
+    <message>java.lang.IllegalArgumentException: Not enough money</message>
+    <frame>
+      <class>Client</class>
+      <method>withdrawMoney</method>
+      <line>17</line>
+    </frame>
+    <frame>
+      <class>Shop</class>
+      <method>makeOrder</method>
+      <line>54</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>35</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2025-10-15T07:11:10.801111Z</date>
+  <millis>1760512270801</millis>
+  <nanos>111000</nanos>
+  <sequence>5</sequence>
+  <logger>Shop</logger>
+  <level>WARNING</level>
+  <class>Shop</class>
+  <method>makeOrder</method>
+  <thread>1</thread>
+  <message>Exception: </message>
+  <exception>
+    <message>Shop$UnknownClientException: id = 2</message>
+    <frame>
+      <class>Shop</class>
+      <method>findClient</method>
+      <line>28</line>
+    </frame>
+    <frame>
+      <class>Shop</class>
+      <method>makeOrder</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>36</line>
+    </frame>
+  </exception>
+</record>
+</log>

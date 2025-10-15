@@ -13,6 +13,9 @@ public class Client {
     }
     //снятие со счёта
     public void withdrawMoney(double money) {
+        if (this.money - money < 0 ) {
+            throw  new IllegalArgumentException("Not enough money");
+        }
         this.money -= money;
     }
     public double checkMoney() {
